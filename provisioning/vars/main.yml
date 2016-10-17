@@ -1,0 +1,9 @@
+---
+  ruby_install_from_source: true
+  ruby_download_url: http://ftp.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
+  ruby_version: 2.3.1
+  ruby_install_bundler: true
+  mysql_bind_address: "192.168.33.8" # Listen everywhere
+  mysql_root_password: # Empty password
+  mysql_app_username: application
+  mysql_app_password: pa55word
