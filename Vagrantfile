@@ -22,18 +22,18 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder vm_external_config["lybrary_path"], "/home/vagrant/code/Lybrary", :nfs => true
 
   config.vm.provider :virtualbox do |v|
-    v.name = "imagesServer"
+    v.name = "lybrary"
     v.memory = vm_external_config["memory"]
     v.cpus = 2
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--ioapic", "on"]
   end
 
-  config.vm.hostname = "team"
+  config.vm.hostname = "lybrary"
   config.vm.network :private_network, ip: vm_external_config["ip"]
 
   # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
-  config.vm.define :team do |team|
+  config.vm.define :lybrary do |lybrary|
   end
 
   # Ansible provisioner.
