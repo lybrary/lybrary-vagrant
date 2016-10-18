@@ -7,8 +7,8 @@ A development environment for [Lybrary](https://www.github.com/Lybrary/lybrary/)
 You will need the following applications to setup the Lybrary development environment:
 
 * [Vagrant](https://www.vagrantup.com/)
-* [VirtualBox]()
-* [Git]()
+* [VirtualBox](https://www.virtualbox.org/)
+* [Git](https://git-scm.com/)
 
 ## Setup
 
